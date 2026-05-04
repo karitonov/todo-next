@@ -17,7 +17,7 @@ export default function Home() {
     toggleComplete,
   } = useTodos();
 
-  if (isLoading && typeof window !== "undefined") {
+  if (isLoading) {
     return (
       <main className="min-h-screen flex items-center justify-center">
         <div className="text-gray-500">読み込み中...</div>
